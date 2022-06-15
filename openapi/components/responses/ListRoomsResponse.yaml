@@ -1,0 +1,12 @@
+description: List rooms response.
+content:
+  application/json:
+    schema:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: ../schemas/Room.yaml
+        meta:
+          $ref: ../schemas/PaginationMeta.yaml

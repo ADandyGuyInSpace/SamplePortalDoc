@@ -1,0 +1,5 @@
+type: object
+title: Participant Joined Event
+properties:
+  data:
+    $ref: ./ParticipantJoined.yaml

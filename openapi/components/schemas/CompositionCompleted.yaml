@@ -1,0 +1,78 @@
+type: object
+title: Composition Completed
+properties:
+  record_type:
+    type: string
+    example: event
+    enum:
+      - event
+    description: An identifier for the type of the resource.
+  event_type:
+    type: string
+    example: video.room.composition.completed
+    enum:
+      - video.room.composition.completed
+    description: The type of event being delivered.
+  id:
+    type: string
+    format: uuid
+    example: 0ccc7b54-4df3-4bca-a65a-3da1ecc777f0
+    description: Uniquely identify the event.
+  occurred_at:
+    type: string
+    format: date-time
+    example: '2018-02-02T22:25:27.521992Z'
+    description: ISO 8601 datetime of when the event occurred.
+  payload:
+    type: object
+    properties:
+      composition_id:
+        type: string
+        format: uuid
+        example: 0ccc7b54-4df3-4bca-a65a-35a1ecc777f0
+        description: Composition ID that identifies the room composition.
+      download_url:
+        description: Url to download the room composition.
+        type: string
+        example: https://www.example.com
+      duration_secs:
+        description: Room composition duration in seconds.
+        type: integer
+        example: 67
+      format:
+        description: Format of the room composition.
+        type: string
+        example: mp4
+      resolution:
+        description: Format of the room composition.
+        type: string
+        example: 1280x720
+      room_id:
+        type: string
+        format: uuid
+        example: 0ccc7b54-4df3-4bca-a65a-35a1ecc777f0
+        description: Room ID associated with the room composition.
+      session_id:
+        type: string
+        format: uuid
+        example: 0ccc7b54-4df3-4bca-a65a-3da1ecc777f0
+        description: Session ID associated with the room composition.
+      size_mb:
+        description: Room composition size in MB.
+        type: number
+        format: float
+        example: 10.5
+example:
+  record_type: event
+  event_type: video.room.composition.completed
+  id: d51754fc-6888-4b0e-8f29-fc3ae41250cd
+  occurred_at: '2022-03-02 04:47:29.980874Z'
+  payload:
+    composition_id: 5970ce77-4aeb-4e18-ac8c-3effca0c145a
+    download_url: https://www.example.com
+    duration_secs: 53
+    format: mp4
+    resolution: 1280x720
+    room_id: 2fbf2c0d-b6aa-463f-aeed-83ce298be978
+    session_id: 7c4da191-2600-4df6-a35e-0ecae6caa5d3
+    size_mb: 2.6

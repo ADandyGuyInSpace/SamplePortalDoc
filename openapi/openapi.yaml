@@ -1,0 +1,71 @@
+openapi: 3.0.0
+info:
+  version: 2.0.0
+  title: Telnyx API
+  description: SIP trunking, SMS, MMS, Call Control and Telephony Data Services.
+  x-latency-category: responsive
+  x-endpoint-cost: light
+  license:
+    name: MIT
+  contact:
+    email: support@telnyx.com
+servers:
+  - url: https://api.telnyx.com/v2
+    description: Version 2.0.0 of the Telnyx API
+security:
+  - BearerAuth: []
+tags:
+  - name: Rooms
+    description: Rooms operations.
+  - name: Room Sessions
+    description: Rooms Sessions operations.
+  - name: Room Participants
+    description: Rooms Participants operations.
+  - name: Rooms Client Tokens
+    description: Rooms Client Tokens operations.
+  - name: Room Recordings
+    description: Rooms Recordings operations.
+  - name: Room Compositions
+    description: Rooms Compositions operations.
+paths:
+  /rooms:
+    $ref: paths/rooms.yaml
+  /rooms/{room_id}:
+    $ref: paths/rooms_{room_id}.yaml
+  /rooms/{room_id}/actions/generate_join_client_token:
+    $ref: paths/rooms_{room_id}_actions_generate_join_client_token.yaml
+  /rooms/{room_id}/actions/refresh_client_token:
+    $ref: paths/rooms_{room_id}_actions_refresh_client_token.yaml
+  /rooms/{room_id}/sessions:
+    $ref: paths/rooms_{room_id}_sessions.yaml
+  /room_sessions:
+    $ref: paths/room_sessions.yaml
+  /room_sessions/{room_session_id}:
+    $ref: paths/room_sessions_{room_session_id}.yaml
+  /room_sessions/{room_session_id}/actions/end:
+    $ref: paths/room_sessions_{room_session_id}_actions_end.yaml
+  /room_sessions/{room_session_id}/actions/mute:
+    $ref: paths/room_sessions_{room_session_id}_actions_mute.yaml
+  /room_sessions/{room_session_id}/actions/unmute:
+    $ref: paths/room_sessions_{room_session_id}_actions_unmute.yaml
+  /room_sessions/{room_session_id}/actions/kick:
+    $ref: paths/room_sessions_{room_session_id}_actions_kick.yaml
+  /room_sessions/{room_session_id}/participants:
+    $ref: paths/room_sessions_{room_session_id}_participants.yaml
+  /room_participants:
+    $ref: paths/room_participants.yaml
+  /room_participants/{room_participant_id}:
+    $ref: paths/room_participants_{room_participant_id}.yaml
+  /room_recordings:
+    $ref: paths/room_recordings.yaml
+  /room_recordings/{room_recording_id}:
+    $ref: paths/room_recordings_{room_recording_id}.yaml
+  /room_compositions:
+    $ref: paths/room_compositions.yaml
+  /room_compositions/{room_composition_id}:
+    $ref: paths/room_compositions_{room_composition_id}.yaml
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
