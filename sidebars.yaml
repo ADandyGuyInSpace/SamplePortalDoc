@@ -17,4 +17,5 @@ training:
               - label: iOS Client SDK
                 page: developer-portal/markdown/video/iosclientSDK.md
           - group: API Reference
-            page: openapi/openapi.yaml/*
+            pages: 
+              - page: openapi/videoapi.yaml
