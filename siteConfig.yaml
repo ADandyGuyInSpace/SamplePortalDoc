@@ -1,20 +1,20 @@
 meta:
-  title: Redocly Training
-  description: The best API documentation generator ever.
-  siteUrl: https://developer-portal-starter.redoc.ly
-  keywords: redocly developer portal, api portal starter, api reference docs
+  title: Telnyx Documentation Live Example
+  description: The best Telnyx Example you've ever seen
+  siteUrl: https://telnyx.com
+  keywords: telnyx, api portal starter, api reference docs
   lang: en-US
 linkChecker:
   severity: warning
   options:
     CheckExternal: false
 logo:
-  image: ./images/logo.png
+  image: ./images/logo-dark.png
   altText: Redocly Training
 toc:
   enable: true
 oasDefinitions:
-  petstore: ./openapi/petstore.yaml
+  videoapi: ./openapi/openapi.yaml
   # add links to definitions in our API registry by using a fully qualified URL.
 stylesheets:
   - https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap
@@ -27,17 +27,17 @@ stylesheets:
 #  - ./static/intercom.js
 nav:
 
-  - label: Training exercises
+  - label: Full API Reference
     page: developer-portal/index.md
 
   - label: External docs
     icon: ./images/redocly-icon-white.png
-    href: https://redoc.ly/docs/developer-portal/introduction/
+    href: https://developers.telnyx.com/docs/api/v2/video?lang=python
 
   - search: true
 
 footer:
-  copyrightText: Copyright © Redocly 2019-2021. All right reserved.
+  copyrightText: Copyright © Telnyx 2019-2022. All right reserved.
   columns:
     - group: Legal
       items:

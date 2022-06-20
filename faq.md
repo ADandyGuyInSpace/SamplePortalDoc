@@ -4,9 +4,9 @@ title: F.A.Q.
 
 # Frequently asked questions
 
-## How much does it cost?
+## Where can I find you?
 
-https://preview.redoc.ly/redocly/new-site/pricing
+https://telnyx.com
 
 
 ## Can I do ______?

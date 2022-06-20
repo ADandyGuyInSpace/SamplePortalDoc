@@ -81,11 +81,11 @@ Please adjust the notice.
 
 ```yaml
 footer:
-  copyrightText: Copyright © Redocly 2019-2020. All right reserved.
+  copyrightText: Copyright © Telnyx 2019-2020. All right reserved.
 ```
 ```yaml
 footer:
-  copyrightText: Copyright © Redocly LLC 2019-2020. All right reserved.
+  copyrightText: Copyright © Telnyx LLC 2019-2020. All right reserved.
 ```
 
 ## Add a footer column
@@ -95,7 +95,7 @@ Add a column in between legal and support named products.
 Here is the original `footer` section.
 ```yaml
 footer:
-  copyrightText: Copyright © Redocly LLC 2019-2020. All right reserved.
+  copyrightText: Copyright © Telnyx LLC 2019-2020. All right reserved.
   columns:
     - group: Legal
       items:
@@ -117,7 +117,7 @@ Each item in a group may link to either a `page` or an `href`.
 
 ```yaml
 footer:
-  copyrightText: Copyright © Redocly LLC 2019-2020. All right reserved.
+  copyrightText: Copyright © Telnyx LLC 2019-2020. All right reserved.
   columns:
     - group: Legal
       items:
