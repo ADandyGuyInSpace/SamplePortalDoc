@@ -1,5 +1,6 @@
 type: reference-docs
 definitionId: videoapi
+showInfo: false
 settings:
   generateCodeSamples:
     languages:

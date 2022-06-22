@@ -15,7 +15,7 @@ export const theme = {
   colors: {
     // tonalOffset: 0.2,
     primary: {
-      main: '#227a88',
+      main: '#00c08b',
       // light: ({ colors }) => lighten(colors.tonalOffset, colors.primary.main),
       // dark: ({ colors }) => darken(colors.tonalOffset, colors.primary.main),
       // contrastText: ({ colors }) => readableColor(colors.primary.main),
@@ -81,15 +81,15 @@ export const theme = {
       link: '#31bbb6',
       head: '#c167e4',
     },
-    // navbar: {
-    //   main: ({ colors }) => colors.primary.main,
-    //   gradient: ({ colors }) => darken(colors.tonalOffset / 2, colors.navbar.main),
-    //   contrastText: 'white'
-    // },
-    // footer: {
-      // main: ({ colors }) => colors.primary.main,
-      // contrastText: 'white'
-    // },
+    navbar: {
+      main: ({ colors }) => colors.primary.main,
+      gradient: ({ colors }) => darken(colors.tonalOffset / 2, colors.navbar.main),
+      contrastText: 'white'
+    },
+    footer: {
+      main: ({ colors }) => colors.primary.main,
+      contrastText: 'white'
+    },
   },
 
   sidebar: {

@@ -1,21 +1,22 @@
-training:
+v2:
   - page: developer-portal/index.md
-  - group: Telnyx API Reference
+  - group: Programmable Video
     expanded: false
+    page: developer-portal/markdown/video/overview.md
     pages:
-      - group: Video API
-        expanded: false
+      - label: Overview
         page: developer-portal/markdown/video/overview.md
+      - group: Client-side SDKs
+        expanded: false
         pages:
-          - group: Client-side SDKs
-            expanded: false
-            pages:
-              - label: JavaScript SDK
-                page: developer-portal/markdown/video/javascriptSDK.md
-              - label: Android Client SDK
-                page: developer-portal/markdown/video/androidclientSDK.md
-              - label: iOS Client SDK
-                page: developer-portal/markdown/video/iosclientSDK.md
-          - group: API Reference
-            pages: 
-              - page: openapi/videoapi.yaml
+          - label: JavaScript SDK
+            page: developer-portal/markdown/video/javascriptSDK.md
+          - label: Android Client SDK
+            page: developer-portal/markdown/video/androidclientSDK.md
+          - label: iOS Client SDK
+            page: developer-portal/markdown/video/iosclientSDK.md
+      - group: API Reference
+        expanded: false
+        page: openapi/video.reference.page.yaml
+v1:
+  - page: developer-portal/markdown/v1/overview.md

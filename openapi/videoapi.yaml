@@ -1,12 +1,13 @@
 openapi: 3.0.0
 info:
   version: 2.0.0
-  title: Telnyx API
+  title: Video API
   description: SIP trunking, SMS, MMS, Call Control and Telephony Data Services.
   x-latency-category: responsive
   x-endpoint-cost: light
   license:
     name: MIT
+    url: https://opensource.org/licenses/MIT
   contact:
     email: support@telnyx.com
 servers:

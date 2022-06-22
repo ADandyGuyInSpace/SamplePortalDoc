@@ -9,7 +9,7 @@ linkChecker:
   options:
     CheckExternal: false
 logo:
-  image: ./images/logo-dark.png
+  image: images/Telnyx One Color Logo Light.png
   altText: Redocly Training
 toc:
   enable: true
@@ -26,8 +26,9 @@ stylesheets:
 #scripts:
 #  - ./static/intercom.js
 nav:
-
-  - label: Full API Reference
+  - label: V1 API Reference
+    page: developer-portal/markdown/v1/overview.md
+  - label: V2 API Reference
     page: developer-portal/index.md
 
   - label: External docs
